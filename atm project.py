@@ -1,12 +1,12 @@
 class BankAccount:
-    def __init__(self, owner, balance=0):
+    def __init__(self, owner, balance = 0):
         self.owner = owner
         self.balance = balance
 
     def deposit(self, amount):
         if amount > 0:
             self.balance += amount
-            print(f"${amount} deposited successfully.")
+            print(f"${amount} deposit successfully.")
         else:
             print("Deposit amount must be positive.")
 
@@ -56,8 +56,6 @@ class ATM:
             else:
                 print("Invalid choice. Please try again.")
 
-
-# Example usage
 account = BankAccount
 atm = ATM(account)
 atm.run()
